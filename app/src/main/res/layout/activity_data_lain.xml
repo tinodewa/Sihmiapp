@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.DataLainActivity">
+
+    <include layout="@layout/header_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:id="@+id/et_tempat_lahir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="@string/tempat_lahir"
+                    android:longClickable="false"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:id="@+id/et_tanggal_lahir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:focusable="false"
+                    android:hint="@string/tgl_lahir"
+                    android:longClickable="false"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:visibility="gone"/>
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/status_perkawinan"
+                android:longClickable="false" />
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_akun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/akun_media_sosial"
+                android:longClickable="false" />
+
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lengkapi_profil_ket"
+                android:textSize="11sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pelatihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/riwayat_profil_ket"
+                android:textSize="11sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:text="@string/simpan"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

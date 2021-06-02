@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_splash"
+    android:gravity="center"
+    tools:context=".view.activity.LoadDataActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/lambanghmi"
+        android:alpha="0.1"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/splash_logo"/>
+
+        <TextView
+            android:id="@+id/tv_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membuat Silaturrahmi Semakin Terjalin"
+            android:textColor="@color/colorBgWhite"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:fontFamily="@font/buka_puasa_bersama_5"
+            android:gravity="center_horizontal"/>
+
+        <ProgressBar
+            android:id="@+id/pb_load_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/colorBgWhite"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_error_load_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/places_search_error"
+            android:textSize="20sp"
+            android:layout_marginVertical="20sp"
+            android:textColor="@color/colorBgWhite"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coba_lagi"
+            android:backgroundTint="@color/bg_button"
+            android:textColor="@color/text_button"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keluar"
+            android:backgroundTint="@color/bg_button"
+            android:textColor="@color/text_button"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

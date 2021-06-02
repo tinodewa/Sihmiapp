@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_gravity="center">
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_left"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:text="nama"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvMessageReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="Cekk"
+                android:textIsSelectable="true"
+                android:textColor="@color/colorTextDark"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvMessageReceiveSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="Cekk"
+                android:textColor="@android:color/white"
+                app:autoSizeMaxTextSize="50sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="2sp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_receiver"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/adobe_reader_icon"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvTimeReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="10:45 AM"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvMessageSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="Cekk"
+                android:textIsSelectable="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tvMessageSendSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="Cekk"
+                android:textColor="@android:color/white"
+                app:autoSizeMaxTextSize="50sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="2sp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_send"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/adobe_reader_icon"
+                android:scaleType="fitCenter"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvTimeSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="10:45 AM"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

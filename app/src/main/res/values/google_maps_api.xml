@@ -1,0 +1,27 @@
+<resources>
+    <!--
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=40:D0:C1:CA:0A:44:ED:D8:C8:14:CD:F4:B5:9C:19:75:37:3A:6E:60%3Bcom.roma.android.sihmi.view.activity
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.roma.android.sihmi.view.activity
+
+    SHA-1 certificate fingerprint:
+    40:D0:C1:CA:0A:44:ED:D8:C8:14:CD:F4:B5:9C:19:75:37:3A:6E:60
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+<!--    CANT ACCESS GOOGLE MAPS WITH OLD GOOGLE_MAPS_API_KEY-->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB7hajddOc9S9PrC_SiakPCTSsXZW_TVmQ</string>-->
+    
+<!--    NEW GOOGLE_MAPS_API_KEY-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCr2QY1xgBJ8-647jTelYF7iAPEHtl62cY</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_circlephoto"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/user"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rlImage"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Leader"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:id="@+id/tvPeriode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Periode Leader"
+                android:textSize="10sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvKet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ket Leader"
+                android:textSize="10sp"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/llText"
+            android:layout_marginTop="4dp"
+            android:gravity="right">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_delete"
+                app:backgroundTint="@color/colorBgWhite"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitCenter"
+                app:fabCustomSize="20dp"
+                app:maxImageSize="15dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_edit"
+                app:backgroundTint="@color/colorBgWhite"
+                app:fabCustomSize="20dp"
+                app:maxImageSize="15dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

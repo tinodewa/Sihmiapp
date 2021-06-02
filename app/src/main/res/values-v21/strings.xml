@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pb_hmi_name">PB HMI</string>
+    <string name="name_field">Nama</string>
+    <string name="register_date_field">Tgl Daftar</string>
+    <string name="login_time_field">Waktu Login</string>
+    <string name="device_field">Device</string>
+    <string name="admin_field">Admin</string>
+    <string name="status_field">Status</string>
+    <string name="agenda_field">Agenda</string>
+    <string name="title_field">Judul</string>
+    <string name="copy_writer_field">Copy Writer</string>
+    <string name="app_name_uppercase">SIHMI</string>
+</resources>

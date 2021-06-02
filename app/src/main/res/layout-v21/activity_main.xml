@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:elevation="0dp">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/keluar"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawableTint="?attr/colorPrimary"
+                android:drawablePadding="32dp"/>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        style="@style/NoShadow"
+        android:layout_gravity="end">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_chatting"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/chat"
+                android:elevation="8dp"/>
+
+            <Button
+                android:id="@+id/btn_konstitusi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icn_konstitusi"/>
+
+            <Button
+                android:id="@+id/btn_alamat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icn_alamat"/>
+
+            <Button
+                android:id="@+id/btn_agenda"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icn_agenda"/>
+
+            <Button
+                android:id="@+id/btn_leader"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icn_leader"/>
+
+            <Button
+                android:id="@+id/btn_bantuan"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icn_bantuan"/>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

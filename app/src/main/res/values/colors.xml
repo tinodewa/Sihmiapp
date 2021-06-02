@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#128C7E</color>
+    <color name="colorPrimary2">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryLight">#A7E9DC</color>
+    <color name="colorAccent">#8563c4</color>
+
+    <color name="textColor">#909090</color>
+
+    <color name="colorsplash1">#85931A</color>
+    <color name="colorsplash2">#0C4E48</color>
+
+    <color name="colornotif">#bfcf27</color>
+    <color name="colorlogo">#FFD200</color>
+
+    <color name="colorTextDark">#474A4F</color>
+    <color name="colorTextLight">#BBBFC4</color>
+    <color name="colorTextAccent">#FA5C5C</color>
+
+    <color name="colorBgWhite">#FFFFFF</color>
+    <color name="colorBgGray">#EDEFF2</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGreen">#6E7800</color>
+
+    <color name="colorDark">#33343B</color>
+    <color name="colorDarkAccent">#28292e</color>
+    <color name="colorDarkAccent2">#2196f3</color>
+
+    <color name="textColorDark">#fcfcfc</color>
+    <color name="textColorDisable">#dcdde1</color>
+
+    <color name="gradient">#fcfcfc</color>
+
+    <color name="bg_button">#f5f5f5</color>
+    <color name="text_button">#827f7f</color>
+
+    <color name="bg_card_item">#f0f0f0</color>
+    <color name="bg_card_item_dark">#494949</color>
+
+</resources>

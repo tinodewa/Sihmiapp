@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.MasterFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_badko"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/nama_badko"
+                    android:drawableRight="@drawable/ic_add_black"
+                    android:drawablePadding="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_cabang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/nama_cabang"
+                    android:drawableRight="@drawable/ic_add_black"
+                    android:drawablePadding="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_korkom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/nama_korkom"
+                    android:drawableRight="@drawable/ic_add_black"
+                    android:drawablePadding="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_komisariat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/nama_komisariat"
+                    android:drawableRight="@drawable/ic_add_black"
+                    android:drawablePadding="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_pelatihan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/nama_pelatihan"
+                    android:drawableRight="@drawable/ic_add_black"
+                    android:drawablePadding="4dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

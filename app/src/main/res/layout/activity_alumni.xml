@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.AlumniActivity">
+
+    <include layout="@layout/header_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profil_alumni_ket"
+                android:textSize="11sp" />
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_domisili_cabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/domisili_hmi_cab"
+                android:longClickable="false"
+                android:focusable="false" />
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pekerjaan"
+                android:longClickable="false" />
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_jabatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/jabatan"
+                android:longClickable="false" />
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/alamat_kerja"
+                android:longClickable="false"/>
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:id="@+id/et_kontribusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/kontribusi"
+                android:longClickable="false"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pastikan"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/checkbox_alumni" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:text="@string/simpan"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

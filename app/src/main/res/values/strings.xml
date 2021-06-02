@@ -1,0 +1,480 @@
+<resources>
+    <string name="app_name">sihmi</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.
+    Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun. Richard McClintock, seorang professor Bahasa Latin dari Hampden-Sidney College di Virginia, mencoba mencari makna salah satu kata latin yang dianggap paling tidak jelas, yakni consectetur, yang diambil dari salah satu bagian Lorem Ipsum. Setelah ia mencari maknanya di di literatur klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada masa Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di bagian 1.10.32.</string>
+
+    <string name="data_aktivitas">Statistik Data Aktivitas Pengguna</string>
+
+    <string name="data_media">Statistik Data Media Pengguna</string>
+
+    <string name="data_admin_aktif">Statistik Admin yang Aktif</string>
+
+    <string name="konten_agenda">Statistik Admin Pembuat Agenda</string>
+
+    <string name="konten_sejarah">Konten Tentang Kami</string>
+
+    <string name="konten_konstitusi">Konten Konstitusi</string>
+
+    <string name="kader_HMI">Kader HMI Nasional</string>
+
+    <string name="perbarui_profil">Perbarui Profil</string>
+
+    <string name="perbarui_kata_sandi">Perbarui Kata Sandi</string>
+    <string name="telah_lk1_profil">Apakah Anda telah LK1?</string>
+    <string name="alumni_profil">Apakah Anda Alumni HMI?</string>
+    <string name="data_lain_profil">Lengkapi data lainnya</string>
+    <string name="permohonan_admin_profil">Permohonan Admin</string>
+    <string name="kata_sandi_ket">Untuk keamanan akun Anda, memperbarui kata sandi dapat Anda lakukan.</string>
+    <string name="kata_sandi">Kata sandi</string>
+
+    <string name="kata_sandi_baru">Kata sandi baru</string>
+
+    <string name="konfirm_kata_sandi">Konfirm kata sandi baru</string>
+
+    <string name="profil_lk1_ket">Permohonan ini sebagai verifikasi akun. Apakah Anda merupakan bagian dari HMI
+    yang terdaftar di aplikasi SIHMI. Kemudian lengkapi data dimana tempat Anda melaksanakan LK1.</string>
+
+    <string name="nama_badko">Nama Badko</string>
+
+
+    // Menu Profile
+    <string name="nama_cabang">Nama Cabang</string>
+    <string name="nama_korkom">Nama Korkom</string>
+    <string name="nama_komisariat">Nama Komisariat</string>
+    <string name="nama_pelatihan">Nama Pelatihan</string>
+    <string name="tanggal_lk1">Tanggal LK1</string>
+    <string name="pastikan">Pastikan data yang Anda isi benar.</string>
+    <string name="checkbox_lk1">Ya benar saya telah LK1 &amp; saya bagian dari HMI.</string>
+    <string name="profil_alumni_ket">Permohonan ini sebagai aktivitas lanjut. Apakah Anda merupakan alumni dari HMI
+    yang terdaftar di aplikasi SIHMI. Kemudian lengkapi data Anda.</string>
+    <string name="domisili_hmi_cab">Domisili HMI Cabang</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="jabatan">Jabatan</string>
+    <string name="alamat_kerja">Alamat Kerja / Instansi</string>
+    <string name="kontribusi">Kontribusi apa yang ingin Anda wujudkan di HMI?</string>
+    <string name="checkbox_alumni">Ya benar saya Alumni HMI.</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="tgl_lahir">Tgl Lahir</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="status_perkawinan">Status Perkawinan</string>
+    <string name="akun_media_sosial">Akun Media Sosial</string>
+    <string name="lengkapi_profil_ket">Lengkapi jenjang pelatihan apa saja yang pernah Anda ikuti di HMI</string>
+    <string name="riwayat_profil_ket">Riwayat Pendidikan yang pernah ditempuh</string>
+    <string name="pelatihan_HMI">Pelatihan HMI</string>
+    <string name="strata">Strata</string>
+    <string name="nama_institusi">Nama Institusi</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="permohonan_admin_ket">Permohonan ini di khususkan bagi ketua komisariat, ketua cabang dan PB HMI.
+        Hak akses akan diberikan berdasarkan pengajuan yang telah terverifikasi.</string>
+    <string name="Komisariat">Komisariat</string>
+    <string name="pilih_hak_akses">Pilih hak akses</string>
+    <string name="unggah_dokumen_admin_ket">Dokumen yang di unggah yaitu SK yang membuktikan bahwa Anda sebagai ketua dari struktural di HMI.\n
+    \nPastikan data yang Anda isi benar. Admin akan bertanggung jawab terhadap hak akses yang diperoleh dari aplikasi SIHMI. maka menjaga agar tetap aman
+    menjadi kewajiban.</string>
+    <string name="checkbox_permohonan_admin"><b>Saya akan menjaga nama baik himpunan &amp; \nMenjalankan roda organisasi sesuai konstitusi.</b></string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nama_panggilan">Nama Panggilan</string>
+    <string name="gmmail">Gmail</string>
+    <string name="no_hp">No. Hp</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="daftar">Daftar</string>
+    <string name="daftar_ket">Silakan lakukan pendaftaran untuk menggunakan aplikasi SIHMI.</string>
+    <string name="checkbox_daftar"><b>Saya setuju dengan syarat &amp; ketentuan yang belaku.</b></string>
+    <string name="punya_akun">Saya punya akun.</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="masuk">Masuk</string>
+    <string name="keluar">Keluar</string>
+
+    // Login Register Lupa Pssword
+    <string name="lupa_kata_sandi_title">Lupa kata sandi</string>
+    <string name="lupa_kata_sandi">Lupa kata sandi ?</string>
+    <string name="laki2">Laki - laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="lupa_sandi_ket">Anda lupa kata sandi? Silakan lakukan permohonan untuk memperoleh kata sandi Anda. Lakukan pengisian data username &amp; email Anda,
+    kemudian cek kata sandi di email Anda</string>
+    <string name="ajukan">Ajukan</string>
+    <string name="pengajuan_berhasil">Pengajuan telah dilayangkan</string>
+    <string name="pengajuan_gagal">Pengajuan gagal dilayangkan</string>
+    <string name="alih_akun">Beralih Akun</string>
+    <string name="judul_konstitusi">Konstitusional HMI</string>
+    <string name="tambah_konstitusi">Tambah Dokumen</string>
+    <string name="perbarui_konstitusi">Perbarui Dokumen</string>
+    <string name="tambah_konstitusi_ket">Anda dapat menambahkan konstitusi PB HMI terbaru, Pedoman LK1 &amp; Dokumen penunjang training lainnya. \nex: Pedoman LK1 2019.</string>
+    <string name="perbarui_konstitusi_ket">Anda dapat memperbarui dokumen yang ada</string>
+    <string name="judul_dokumen">Judul Dokumen</string>
+    <string name="unggah_dokumen">Unggah Dokumen</string>
+    <string name="judul_alamat">Alamat Koms</string>
+    <string name="tambah_alamat">Tambah Alamat</string>
+    <string name="perbarui_alamat">Perbarui Alamat</string>
+    <string name="tambah_alamat_ket">Nikmati kemudahan untuk mengetahui lokasi komisariat Anda dengan menambahkan lokasi alamat komisariat Anda.\nMenentukan alamat lokasi
+    komisariat dapat dilakukan dengan menandai lokasi atau tentukan posisi terkini Anda.</string>
+    <string name="perbarui_alamat_ket">Nikmati kemudahan untuk mengetahui lokasi komisariat Anda dengan memperbarui lokasi alamat komisariat Anda.\nMenentukan alamat lokasi
+    komisariat dapat dilakukan dengan menandai lokasi atau tentukan posisi terkini Anda.</string>
+
+    // Menu Konstitusional
+    <string name="cari_alamat">Cari Alamat</string>
+    <string name="judul_user">Pengguna</string>
+    <string name="permintaan_akses">Permintaan Akses</string>
+    <string name="admin">Admin</string>
+    <string name="konfirm_akses_ket">Apakah anda yakin akan memberikan akses ?</string>
+    <string name="konfirm_ganti_admin_ket">Apakah anda yakin akan mengganti Admin ?</string>
+    <string name="konfirm_akses_hapus_ket">Apakah anda yakin akan menghapus akses ?</string>
+
+    // Menu Alamat
+    <string name="approve_admin_title">Admin Diterima</string>
+    <string name="approve_admin_desc">Dengan mengucapkan bismillahirrahmanirrahim amanah menjadi admin saya terima.</string>
+    <string name="bismillah">Bismillah</string>
+    <string name="admin_berakhir">Admin Berakhir</string>
+    <string name="admin_berakhir_desc">Dengan mengucap Alhamdulillah amanah menjadi admin saya akhiri.</string>
+    <string name="alhamdulillah">Alhamdulillah</string>
+
+    // Menu User
+    <string name="selamat_berproses">Selamat Berproses</string>
+    <string name="selamat_berproses_desc">Alhamdulillah. Selamat bergabung di HMI. Semoga Anda menjadi insan yang bermanfaat bagi umat &amp; bangsa.</string>
+    <string name="yakusa">Yakusa</string>
+    <string name="judul_agenda">Agenda HMI</string>
+    <string name="tambah_agenda">Tambah Agenda</string>
+    <string name="perbarui_agenda">Perbarui Agenda</string>
+    <string name="tambah_agenda_ket">Nikmati kemudahan untuk mengetahui agenda terkini HMI dari PB HMI, Cabang dan Komisariat dengan menambahkan agenda.</string>
+    <string name="perbarui_agenda_ket">Anda dapat memperbarui agenda yang ada</string>
+    <string name="nama_agenda">Nama Agenda</string>
+    <string name="tempat_agenda">Tempat Agenda</string>
+    <string name="tanggal_agenda">Tanggal</string>
+    <string name="jam_agenda">Jam</string>
+    <string name="alamat_agenda">Alamat Agenda</string>
+    <string name="pemberitahuan_agenda">Pemberitahuan akan aktif 10 menit sebelum Agenda berlangsung</string>
+    <string name="kirim_pesan">Kirim Pesan</string>
+
+    // Menu Agenda
+    <string name="judul_tentang_kami">Tentang Kami</string>
+    <string name="tambah_tentang_kami">Tambah Tentang Kami</string>
+    <string name="perbarui_tentang_kami">Perbarui Tentang Kami</string>
+    <string name="tambah_tentang_kami_ket">Anda dapat menambahkan Tentang Kami untuk HMI semakin berintegritas</string>
+    <string name="isi_tentang_kami">Isi Tentang Kami</string>
+    <string name="judul_pengaturan">Pengaturan</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="inggris">Inggris</string>
+    <string name="mode_malam">Mode Malam</string>
+    <string name="mode_malam_ket">Anda dapat mengatur jadwal penggunaan Mode malam.\nUntuk menggunakan Matahari terbenam hingga terbit.</string>
+    <string name="mode_malam_aktifkan_skrng">Aktifkan Sekarang</string>
+
+    // Menu Tentang Kami
+    <string name="mode_malam_aktifkan_jdwal">Aktifkan sesuai jadwal</string>
+    <string name="mode_malam_aktifkan_jdwal_ket">Untuk mencegah gangguan, Mode malam akan menunggu hingga layar mati sebelum aktif.</string>
+    <string name="waktu">Waktu</string>
+    <string name="waktu_berakhir">Waktu Berakhir</string>
+    <string name="font">Gaya &amp; Ukuran huruf</string>
+
+    // Menu Pengaturan
+    <string name="font_ket">Anda dapat mengatur gaya &amp; ukuran font sesuai kebutuhan Anda.</string>
+    <string name="font_ukuran">Ukuran font</string>
+    <string name="font_gaya">Gaya huruf</string>
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="reset">Reset</string>
+    <string name="reset_ket">Reset semua pengaturan ke default</string>
+    <string name="reset_konfirmasi">Anda dapat menambahkan Tentang Kami untuk HMI semakin berintegritas</string>
+    <string name="judul_bantuan">Bantuan</string>
+    <string name="tambah_bantuan">Tambah Bantuan</string>
+    <string name="perbarui_bantuan">Perbarui Bantuan</string>
+    <string name="tambah_bantuan_ket">Anda dapat menambahkan Bantuan untuk panduan dari penggunaan Sistem Aplikasi SIHMI</string>
+    <string name="title_bantuan">Judul Bantuan</string>
+    <string name="isi_bantuan">Isi Bantuan</string>
+    <string name="judul_ketua_umum">Ketua Umum</string>
+    <string name="tambah_ketua_umum">Tambah Ketua Umum</string>
+    <string name="perbarui_ketua_umum">Perbarui Ketua Umum</string>
+    <string name="tambah_ketua_umum_ket">Tambahkan data Ketua Umum Anda agar HMI semakin berintegritas</string>
+    <string name="perbarui_ketua_umum_ket">Perbarui data Ketua Umum Anda agar HMI semakin berintegritas</string>
+    <string name="nama_ketua_umum">Nama Ketua Umum</string>
+
+    // Menu Bantuan
+    <string name="periode_ketua_umum">Periode</string>
+    <string name="sampai_ketua_umum">Sampai</string>
+    <string name="berhasil_tambah">Data telah disimpan</string>
+    <string name="gagal_tambah">Data gagal disimpan</string>
+    <string name="berhasil_update">Data telah diperbarui</string>
+    <string name="gagal_update">Data gagal diperbarui</string>
+
+    // Menu Leader
+    <string name="berhasil_hapus">Data telah dihapus</string>
+    <string name="gagal_hapus">Data gagal dihapus</string>
+    <string name="berhasil_login">Masuk Berhasil</string>
+    <string name="gagal_login">Masuk Gagal</string>
+    <string name="berhasil_daftar">Daftar Berhasil</string>
+    <string name="gagal_daftar">Daftar Gagal</string>
+    <string name="berhasil_unggah_dokumen">Unggah Dokumen Berhasil</string>
+    <string name="gagal_unggah_dokumen">Unggah Dokumen Gagal</string>
+
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="field_mandatory">Semua field harus diisi</string>
+    <string name="unggah_foto">Unggah foto dengan klik tombol</string>
+    <string name="maks_foto">Maksimal 2 MB</string>
+    <string name="maks_dokumen">Maksimal 10 MB</string>
+    <string name="maks_dokumen_admin">Maksimal 5 MB</string>
+    <string name="tindakan">Tindakan yang ingin Anda lakukan</string>
+    <string name="detail">Lihat Detail</string>
+    <string name="ubah">Ubah Data</string>
+    <string name="hapus">Hapus</string>
+    <string name="konfirmasi">Apakah anda yakin ingin <b>menghapus</b> data ?</string>
+
+    <string name="konfirmasi_logout">Apakah anda yakin ingin keluar dari SIHMI ?</string>
+    <string name="konfirmasi_reset">Apakah anda yakin ingin <b>me-reset</b> semuanya ke default ?</string>
+
+    <string name="konfirmasi_akun">Apakah anda yakin ingin menghapus akun ?</string>
+    <string name="tidak_ada_internet">Koneksi Internet tidak ada</string>
+    <string name="email_not_valid">Email tidak valid</string>
+    <string name="defaul">Default</string>
+    <string name="tahun">Tahun</string>
+
+    <string name="tanggal">Tanggal</string>
+    <string name="pass_tidak_sesuai">Password tidak sesuai</string>
+    <string name="pass_min_karakter">Password minimal 6 karakter</string>
+    <string name="klik2x">Klik Back untuk keluar</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="hak_akses_perbarui">Anda tidak mempunyai Hak akses untuk perbarui data ini</string>
+    <string name="hak_akses_hapus">Anda tidak mempunyai Hak akses untuk hapus data ini</string>
+    <string name="berhasil_ganti_admin">Ganti admin berhasil</string>
+    <string name="gagal_ganti_admin">Ganti admin gagal</string>
+    <string name="laporan">Laporan</string>
+    <string name="data_hmi">Data HMI</string>
+    <string name="alamat_domisili">Alamat_Domisili</string>
+
+    <string name="badko">Badko</string>
+    <string name="cabang">Cabang</string>
+
+    <string name="komisariat">Komisariat</string>
+
+    <string name="korkom">korkom</string>
+    <string name="pelatihan">pelatihan</string>
+
+    <string name="pengguna_sihmi">Pengguna SIHMI</string>
+
+    <string name="data_organigram">Data Organigram</string>
+    <string name="hapus_alamat">Hapus Alamat...</string>
+
+    <string name="cari">Cari...</string>
+    <string name="hari_ini">Hari Ini</string>
+
+    <string name="kemarin">Kemarin</string>
+    <string name="akses_penyimpanan">Aplikasi ini butuh Akses Penyimpanan</string>
+    <string name="mengunggah_foto">Mengungah Foto...</string>
+
+    <string name="gagal_potong">Gagal Potong</string>
+    <string name="sukses_upload_file">Sukses Upload File</string>
+    <string name="gagal_load_data">Gagal Load Data</string>
+    <string name="mengganti_foto_profile">Mengganti Foto Profil</string>
+    <string name="tanggal_lk1_tidak_boleh">Tanggal LK 1 tidak boleh hari mendatang</string>
+
+    <string name="ganti_password">Ganti Password...</string>
+    <string name="pengajuan">Pengajuan....</string>
+    <string name="menyimpan_profile">Menyimpan Profile</string>
+    <string name="tambah_data_training">Tambah Data Training</string>
+    <string name="tahun_training">Tahun Training</string>
+    <string name="nama_training">Nama Training</string>
+    <string name="lokasi_training">Lokasi Training</string>
+    <string name="tambah_data_kuliah">Tambah Data Kuliah</string>
+    <string name="nama_universitas">Nama Universitas</string>
+    <string name="fakultas">Jurusan</string>
+    <string name="field_kosong">field kosong</string>
+    <string name="mengunggah_gambar">Mengunggah Gambar...</string>
+    <string name="mengunggah_dok">Mengunggah Dokumen...</string>
+    <string name="komfirmasi_title">Konfirmasi</string>
+    <string name="tidak_bisa_akses">Tidak Bisa Akses!</string>
+    <string name="grafik_alumni">Grafik Alumni</string>
+    <string name="grafik_kaderisasi">Grafik Kaderisasi</string>
+    <string name="data_kader">Data Kader</string>
+    <string name="data_pelatihan_kader">Data Pelatihan Kader</string>
+    <string name="lihat_lebih_detail">Lihat lebih detail</string>
+    <string name="grafik_pelatihan">Grafik Pelatihan</string>
+    <string name="p">P</string>
+    <string name="l">L</string>
+    <string name="data_alumni">Data Alumni</string>
+    <string name="data_kaderisasi">Data Kaderisasi</string>
+    <string name="data_pelatihan">Data Pelatihan</string>
+    <string name="data_kosong">Data Kosong</string>
+    <string name="grafik">Grafik</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="kader">Kader</string>
+    <string name="non_kader">Non Kader</string>
+    <string name="permintaan_admin">Permintaan Admin</string>
+    <string name="permintaan_admin_anggota">Permintaan</string>
+    <string name="anggota">Anggota</string>
+    <string name="permintaan_anggota">Permintaan Anggota</string>
+    <string name="sampai_selesai">- Selesai</string>
+    <string name="menambah_agenda">Menambah Agenda...</string>
+    <string name="update_agenda">Memperbarui Agenda...</string>
+    <string name="hapus_agenda">Hapus Agenda...</string>
+    <string name="load_data">Mengambil Data...</string>
+    <string name="alamat_sudah_ada">Alamat Sudah Ada</string>
+    <string name="menambah_alamat">Menambah Alamat...</string>
+    <string name="update_alamat">Memperbarui Alamat...</string>
+    <string name="cari_lokasi">Cari Lokasi</string>
+    <string name="nama_tempat">Nama Tempat</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="nasional">Nasional</string>
+    <string name="menghapus">Menghapus...</string>
+    <string name="menambah_leader">Menambah Leader...</string>
+    <string name="update_leader">Memperbarui Leader...</string>
+    <string name="tambah">Tambah</string>
+    <string name="update">Perbarui</string>
+    <string name="add_konstitusi">Menambah Konstitusi...</string>
+    <string name="update_konstitusi">Memperbarui Konstitusi...</string>
+    <string name="delete_konstitusi">Menghapus Konstitusi...</string>
+    <string name="menambah_tentang_kami">Menambah Tentang Kami...</string>
+    <string name="memperbarui_tentang_kami">Perbarui Tentang Kami...</string>
+    <string name="menghapus_tentang_kami">Menghapus Tentang Kami...</string>
+    <string name="data_cabang">Data Cabang</string>
+    <string name="data_korkom">Data Korkom</string>
+    <string name="data_badko">Data Badko</string>
+    <string name="data_komisariat">Data Komisariat</string>
+    <string name="data_training">Data Training</string>
+    <string name="view_more">Lihat</string>
+    <string name="nama">Nama</string>
+    <string name="tgl_daftar">Tgl Daftar</string>
+    <string name="waktu_login">Waktu Masuk</string>
+    <string name="device">Perangkat</string>
+
+    <string name="statistik_data_approval_user">Statistik Data Persetujuan Pengguna</string>
+    <string name="diverifikasi_oleh">Diverifikasi Oleh</string>
+    <string name="status">Status</string>
+    <string name="laporan_data_admin">Laporan Data Admin</string>
+    <string name="statistik_admin_pembuat_agenda">Statistik Admin Pembuat Agenda</string>
+    <string name="agenda">Agenda</string>
+    <string name="konten_tentang_kami">Konten Tentang Kami</string>
+    <string name="judul">Judul</string>
+    <string name="copywriter">CopyWriter</string>
+    <string name="orang">orang</string>
+    <string name="semua">Semua</string>
+    <string name="oleh">oleh</string>
+    <string name="cari_kontak">Cari Kontak</string>
+    <string name="loginn">Masuk...</string>
+    <string name="logout_berhasil">Keluar Berhasil</string>
+    <string name="data_tidak_tersedia">Data Tidak Tersedia</string>
+    <string name="jadikan_admin">Jadikan Admin</string>
+    <string name="peringatan">Peringatan</string>
+    <string name="kesalahan_data">Terjadi kesalahan saat mengakses data, silakan login kembali</string>
+    <string name="anggota_berakhir">Anggota Berakhir</string>
+    <string name="anggota_berakhir_desc">Anggota telah berakhir. Terimakasih telah menjadi anggota HMI</string>
+    <string name="tutup">Tutup</string>
+    <string name="pengajuan_ditolak_desc">Pengajuan Anda ditolak.</string>
+    <string name="pengajuan_ditolak">Maaf belum saatnya</string>
+    <string name="batalkan_permintaan">Batalkan Permintaan</string>
+    <string name="gagal_membatalkan">Gagal membatalkan</string>
+    <string name="membatalkan_permintaan">Membatalkan permintaan...</string>
+    <string name="memuat_data">Memuat data ...</string>
+    <string name="download_image">Download Image</string>
+    <string name="coba_lagi">Coba Lagi</string>
+    <string name="gagal_memuat_data">Gagal memuat data</string>
+    <string name="tanggal_lk1_over">Tanggal LK1 tidak boleh lebih dari tanggal sekarang</string>
+    <string name="tahun_overload">Tahun tidak boleh lebih dari tahun sekarang</string>
+    <string name="same_training_type">Tidak bisa menambahkan tipe Training yang sama</string>
+    <string name="invalid_year_format">Format tahun salah</string>
+    <string name="you">Anda</string>
+    <string name="message_from">Pesan dari&#160;</string>
+    <string name="name_of">Nama&#160;</string>
+    <string name="pilih">Pilih&#160;</string>
+    <string name="total">Total</string>
+    <string name="data_kader_tahun">Data Kader -&#160;</string>
+    <string name="tida_ada_data">Tida ada data</string>
+    <string name="pada_tanggal">pada tanggal"</string>
+    <string name="di_agenda">di</string>
+    <string name="new_agenda">Agenda Baru</string>
+    <string name="agenda_dimulai">Agenda Dimulai</string>
+    <string name="pengingat_diaktifkan">Pengingat diaktifkan</string>
+    <string name="title_activity_alamat_maps">Alamat</string>
+    <string name="start_fill">Mulai mengisi</string>
+    <string name="pb_hmi_name">PB HMI</string>
+    <string name="name_field">Nama</string>
+    <string name="register_date_field">Tgl Daftar</string>
+    <string name="login_time_field">Waktu Login</string>
+    <string name="device_field">Device</string>
+    <string name="admin_field">Admin</string>
+    <string name="status_field">Status</string>
+    <string name="agenda_field">Agenda</string>
+    <string name="title_field">Judul</string>
+    <string name="copy_writer_field">Copy Writer</string>
+    <string name="app_name_uppercase">SIHMI</string>
+    <string-array name="jenjang_pendidikan">
+        <item>D3</item>
+        <item>D4</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="tipe_training">
+        <item>LK2</item>
+        <item>LK3</item>
+        <item>TID</item>
+        <item>LKK</item>
+        <item>SC</item>
+    </string-array>
+    <string-array name="tipe_hmi">
+        <item>Nasional</item>
+        <item>Cabang</item>
+        <item>Komisariat</item>
+    </string-array>
+    <string-array name="fakultas">
+        <item>Fakultas A</item>
+        <item>Fakultas B</item>
+        <item>Fakultas C</item>
+    </string-array>
+    <string-array name="universitas">
+        <item>Universitas A</item>
+        <item>Universitas B</item>
+        <item>Universitas C</item>
+    </string-array>
+    <string-array name="medsos">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="status">
+        <item>Belum Kawin</item>
+        <item>Sudah Kawin</item>
+    </string-array>
+    <string-array name="admin">
+        <item>Non Aktif / User Biasa</item>
+        <item>Admin 1</item>
+        <item>Admin 2</item>
+        <item>Admin 3</item>
+        <item>Low Admin 1</item>
+        <item>Low Admin 2</item>
+        <item>Second Admin</item>
+        <item>Super Admin</item>
+    </string-array>
+    <string-array name="bahasa_array">
+        <item>Indonesia</item>
+        <item>Inggris</item>
+    </string-array>
+    <string-array name="notfikasi_chat_array">
+        <item>Aktifkan Notifikasi</item>
+        <item>Bisukan</item>
+    </string-array>
+    <string-array name="pemberitahuan_agenda_array">
+        <item>Aktifkan Pemberitahuan</item>
+        <item>Bisukan Pemberitahuan</item>
+    </string-array>
+    <string-array name="nama_type">
+        <item>Nasional</item>
+        <item>Cabang</item>
+        <item>Komisariat</item>
+    </string-array>
+
+</resources>

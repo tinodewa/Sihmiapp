@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/ic_launcher_round"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPhoto"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faris Perwira P."
+                android:layout_toLeftOf="@id/tvTime"
+                android:textSize="20sp"
+                android:textColor="?attr/textcolor"/>
+
+            <TextView
+                android:id="@+id/tvKet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Faris Perwira P. mengajukan diri untuk jadi admin."
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:textColor="?attr/textcolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSetuju"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Setujui"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="?attr/colorPrimary"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Update"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="?attr/colorPrimary"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Detail"
+                    android:textColor="?attr/colorPrimary"
+                    android:backgroundTint="@android:color/background_light"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

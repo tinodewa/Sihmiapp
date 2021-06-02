@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".view.activity.SwitchAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_above="@+id/llButton"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:listitem="@layout/item_akun"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_alih_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alih_akun"
+            android:backgroundTint="@color/bg_button"
+            android:textColor="@color/text_button"
+            android:stateListAnimator="@null"
+            android:padding="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar"
+            android:backgroundTint="@color/bg_button"
+            android:textColor="@color/text_button"
+            android:stateListAnimator="@null"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlImage"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_circlephoto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/user"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Leader"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/tvPeriode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ket Leader"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/tvKet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ket Leader"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_delete"
+                app:backgroundTint="@color/colorBgWhite"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:fabCustomSize="35dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_edit"
+                app:backgroundTint="@color/colorBgWhite"
+                app:fabCustomSize="35dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

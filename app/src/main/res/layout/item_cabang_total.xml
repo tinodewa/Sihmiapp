@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tv_number"
+            tools:text="1. "
+            android:padding="3dp"
+            android:textColor="?attr/textcolor"/>
+
+        <TextView
+            android:id="@+id/tv_master_value"
+            tools:text="Cabang Malang "
+            android:padding="3dp"
+            android:textColor="?attr/textcolor"/>
+
+        <TextView
+            android:id="@+id/tv_total"
+            tools:text="300"
+            android:padding="3dp"
+            android:textColor="?attr/textcolor"/>
+
+    </TableRow>
+
+</TableLayout>

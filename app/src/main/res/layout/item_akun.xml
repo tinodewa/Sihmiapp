@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="?attr/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rlImage"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp">-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logo_icon"
+                android:layout_centerVertical="true"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivInitial"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:visibility="gone" />-->
+
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Faris Perwira P."
+            android:layout_toEndOf="@id/ivPhoto"
+            android:layout_toStartOf="@id/btn_masuk"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:textColor="?attr/textcolor"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk"
+            android:textColor="@color/text_button"
+            android:background="@drawable/bg_rectangle_button"
+            android:layout_toLeftOf="@id/img_delete"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_black"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

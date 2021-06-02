@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah_data_kuliah"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/et_thn_masuk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/tahun"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/sp_jenjang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/jenjang_pendidikan"
+            android:padding="4dp"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/et_jenjang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Jenjang"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_universitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/universitas"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/sp_fakultas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/fakultas"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nama_universitas"
+        android:visibility="visible"/>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/et_fakultas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fakultas"
+        android:visibility="visible"/>
+
+</LinearLayout>

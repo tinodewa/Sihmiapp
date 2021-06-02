@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.PermohonanAdminActivity">
+
+    <include layout="@layout/header_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/permohonan_admin_ket"
+            android:textSize="11sp"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:longClickable="false"
+            android:id="@+id/et_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:hint="@string/komisariat"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:longClickable="false"
+            android:focusable="false"
+            android:id="@+id/et_hak_akses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pilih_hak_akses"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="?attr/textcolor"
+                android:longClickable="false"
+                android:focusable="false"
+                android:id="@+id/et_unggah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unggah_dokumen"/>
+
+            <ImageView
+                android:id="@+id/img_attach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attachment"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/adobe_reader_icon"
+                android:background="@drawable/rectangle_dash_line"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="@string/unggah_dokumen_admin_ket"
+                android:textSize="11sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/maks_dokumen_admin"
+                android:layout_below="@id/iv_image"/>
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/checkbox_permohonan_admin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/simpan"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

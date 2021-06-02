@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Pekerjaan"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/etThnMsk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tahun Masuk"
+            android:inputType="number"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/etThnKluar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tahun Keluar"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Perusahaan"/>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/etJabatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jabatan Perusahaan"/>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Perusahaan"/>
+
+</LinearLayout>

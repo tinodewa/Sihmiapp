@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:focusable="false"
+        android:id="@+id/input_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pilih"/>
+
+    <EditText
+        android:id="@+id/input_name_master"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_of"/>
+
+</LinearLayout>

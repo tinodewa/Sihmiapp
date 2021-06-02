@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hallo Boys"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_edit"/>
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_edit"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_delete"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

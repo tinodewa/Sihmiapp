@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.AboutDetailActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Sejarah HMI Nasional"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum quis nunc eu ullamcorper. Nunc consectetur eros tellus. Duis ultricies lobortis ex a consequat. Proin viverra nibh nec ligula ultrices, at imperdiet nisl consequat. Ut vehicula rhoncus nulla sed volutpat. Aenean iaculis lectus purus, vestibulum vehicula velit molestie ut. Quisque nec nunc urna.
+
+Proin tincidunt leo eu mattis imperdiet. Donec dictum augue at euismod lobortis. Vivamus sagittis ante venenatis vulputate dapibus. Duis tortor elit, placerat eget enim volutpat, hendrerit aliquet urna. Nunc quis quam imperdiet, facilisis ante hendrerit, eleifend turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur dolor massa, blandit ac quam id, semper accumsan risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer gravida leo tortor, nec placerat mauris iaculis eget. Nullam et porttitor ante. Sed est purus, egestas nec hendrerit sit amet, semper in ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed sollicitudin sem sit amet lectus porta, in mollis orci laoreet. Aliquam suscipit blandit volutpat. Nam eu nunc id sapien porttitor aliquam. Maecenas felis arcu, feugiat sit amet urna vitae, tincidunt consequat quam. Etiam feugiat pretium nibh, nec ornare leo. Aenean nec metus massa. Nullam leo nibh, imperdiet faucibus finibus at, volutpat eget neque. Etiam non dapibus augue. Sed sit amet neque dignissim, elementum lorem ut, rutrum eros. Donec pharetra euismod hendrerit. Integer et nulla id velit varius dapibus. Fusce viverra dui quis feugiat dictum. Suspendisse vulputate, erat non sagittis dignissim, lacus arcu accumsan tortor, sed luctus tortor ex ac nibh. Mauris varius nisi sit amet sagittis accumsan. Morbi varius ligula odio, id rutrum magna mattis vel.
+
+Etiam fermentum erat eget elit blandit, a egestas ipsum dictum. Maecenas eleifend arcu eu odio laoreet mattis. Integer non venenatis erat, id ullamcorper nisi. Vivamus non mauris quam. Cras at urna mi. Nulla blandit mollis massa, vitae consectetur ipsum pulvinar vel. Fusce commodo magna magna, ac pulvinar odio egestas a. Sed quis neque nunc. Vestibulum vehicula nisi sit amet nisi faucibus, a euismod libero sodales." />
+
+        </LinearLayout>
+        .
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

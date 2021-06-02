@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rlImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <ImageView
+                android:id="@+id/ivInitial"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rlImage"
+            android:layout_marginLeft="8dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/right_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:textColor="?attr/textcolor"
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="10:45 AM"
+                        android:textSize="10sp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <ImageView
+                            android:id="@+id/notifIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_notifications_off_black"
+                            android:layout_marginEnd="5dp"
+                            android:visibility="gone"
+                            android:tint="?attr/textcolor"/>
+
+                        <TextView
+                            android:id="@+id/tvUnread"
+                            android:minWidth="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            tools:text="10"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="4dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/right_container"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Faris Perwira P."
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="?attr/textcolor"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

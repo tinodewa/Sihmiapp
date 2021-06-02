@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_data_kader_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_badko_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Badko Jawa Timur"
+        android:textColor="?attr/textcolor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorTextLight"
+        android:layout_marginTop="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cabang_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_cabang_total" />
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tida_ada_data"
+        android:padding="3dp"
+        android:textColor="?attr/textcolor"
+        android:visibility="gone"/>
+
+</LinearLayout>

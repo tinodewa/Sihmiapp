@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah_data_training"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:textColor="?attr/textcolor"
+            android:id="@+id/sp_training"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/etTipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tipe Training"
+            android:visibility="gone"/>
+
+        <EditText
+            android:textColor="?attr/textcolor"
+            android:id="@+id/etTahun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/tahun_training"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <EditText
+        android:textColor="?attr/textcolor"
+        android:id="@+id/etLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lokasi_training"/>
+
+</LinearLayout>

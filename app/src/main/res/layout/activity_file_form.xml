@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.FileFormActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"/>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_below="@id/header"-->
+        <!--android:layout_above="@id/llButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_below="@id/header"
+            android:layout_above="@id/llButton"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul Konstituisi" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Deskripsi Konstituisi" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Silahkan upload file PDF baru untuk meng update Konstitusi Nasional HMI"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload File"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="@color/colorBgWhite"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"/>
+
+                <TextView
+                    android:textColor="?attr/textcolor"
+                    android:id="@+id/tv_nama_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@id/btn_upload"
+                    android:layout_toRightOf="@id/btn_upload"
+                    android:layout_marginTop="-20dp"/>
+
+
+            </RelativeLayout>
+
+            <!--<WebView-->
+                <!--android:id="@+id/webView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></WebView>-->
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_batal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:text="BATAL"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="SIMPAN"
+            android:textColor="@android:color/white"
+            android:backgroundTint="?attr/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>

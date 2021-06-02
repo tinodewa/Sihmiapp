@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".view.activity.ChatActivity"
+    android:id="@+id/activity_chat">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_initial"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/logo_icon"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rl_img"
+                    android:layout_marginLeft="8dp"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_below="@id/appBar"
+        android:layout_above="@id/llMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/llMessage"
+        android:gravity="start"
+        android:padding="8dp"
+        android:layout_marginBottom="-4dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_file"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_file"
+            app:backgroundTint="@color/colorBgWhite"
+            app:fabCustomSize="35dp"
+            android:layout_marginBottom="8dp"
+            app:elevation="0dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_image"
+            app:backgroundTint="@color/colorBgWhite"
+            app:fabCustomSize="35dp"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="8dp"
+            android:id="@+id/rv_stiker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBgWhite"
+            android:padding="8dp"
+            android:id="@+id/chat_input_container">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_primary"
+                app:backgroundTint="@color/colorBgWhite"
+                android:layout_marginRight="8dp"
+                app:fabCustomSize="35dp"
+                app:elevation="2dp"
+                app:borderWidth="0dp"
+                android:layout_centerVertical="true"/>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/emoji_button"-->
+            <!--android:padding="4dp"-->
+            <!--android:src="@drawable/ic_add_black"-->
+            <!--android:background="@drawable/bg_circle"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginRight="8dp"/>-->
+
+            <ImageView
+                android:id="@+id/btn_send"
+                android:padding="4dp"
+                android:src="@drawable/ic_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentRight="true"/>
+
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type message..."
+                android:textColorHint="@color/textColor"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:maxLines="4"
+                android:textColor="?attr/textcolor"
+                android:layout_toRightOf="@id/fab_add"
+                android:layout_toLeftOf="@id/btn_send"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/empty_state" />
+
+</RelativeLayout>

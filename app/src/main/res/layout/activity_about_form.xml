@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.AboutFormActivity">
+
+    <include layout="@layout/header_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:padding="16dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:textColor="?attr/textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tambah_tentang_kami_ket"
+                    android:textSize="11sp"/>
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasional"/>
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_nama_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PB HMI" />
+
+                <TextView
+                    android:textColor="?attr/textcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isi_tentang_kami"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:textColor="?attr/textcolor"
+                    android:longClickable="false"
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:inputType="textMultiLine"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:theme="@style/EditTextTheme"
+                    android:gravity="start"/>
+                    <!--android:theme="@style/EditTextTheme"/>-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:text="@string/simpan"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

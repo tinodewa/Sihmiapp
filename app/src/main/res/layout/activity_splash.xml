@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".view.activity.SplashActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/lambanghmi"
+        android:alpha="0.1"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/splash_logo"/>
+
+        <TextView
+            android:id="@+id/tv_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membuat Silaturrahmi Semakin Terjalin"
+            android:textColor="@color/colorBgWhite"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:fontFamily="@font/buka_puasa_bersama_5"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
